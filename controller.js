@@ -6,7 +6,7 @@ var restify = require("restify"),
     settings = require("./settings"),
     fs = require("fs"),
     path = require("path"),
-    cutils = require("../cloud_utils"),
+    cutils = require("./cloud_utils"),
     async = require("async"),
     events = new (require("events").EventEmitter)();
 
