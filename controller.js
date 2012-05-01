@@ -488,7 +488,7 @@ function schedule(callback){
 /* start(port:int)
  * start the controller at the specified port.
  */
-function start(port){
+exports.start = function(port){
 
     // Setup event handlers:
     events.on("worker_freed", function(){ 
@@ -596,4 +596,4 @@ function start(port){
         events.emit("worker_freed");
     });
 }
-start(4000);
+
